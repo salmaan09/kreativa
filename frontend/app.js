@@ -269,8 +269,6 @@ function navbar(){
   }
   
   links.innerHTML = `
-    <a href="/" class="small">Explore</a>
-    <a href="/creators.html" class="small">Cari Creator</a>
     ${u && u.role === 'customer' ? '<a href="/dashboard-customer.html" class="small">Pesanan Saya</a>' : ''}
     ${u && u.role === 'admin' ? '<a href="/dashboard-admin.html" class="small">Admin</a>' : ''}
     ${u ? `<a href="/account.html" class="small">${esc(u.name)}</a>` : ''}
